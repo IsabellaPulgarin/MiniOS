@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header{
+    background-color: rgba(29, 29, 29, 0.733);
+    height: 7vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons{
+    display: flex;
+
+}
+
+.icon{
+    width: 30%;
+    
+}
