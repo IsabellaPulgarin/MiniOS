@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/weather.css">
 </head>
 <body>
-    
+  <div class="weather-bg">
+    <div class="weather-app">
+      <header class="weather-header">
+        <h1 class="city">Medellín</h1>
+        <div class="header-icons">
+          <span class="menu-icon">☰</span>
+          <span class="settings-icon">⋮</span>
+        </div>
+      </header>
+
+      <main>
+        <section class="current-weather">
+          <h3 class="temp">19°</h1>
+          <p class="desc">Lluvia</p>
+          <p class="feels">Sensación térmica: 12°. Escala 0 de viento.</p>
+        </section>
+
+        <section class="forecast card">
+          <header class="forecast-header">
+            <h2 class="forecast-title">Próximas 72 Horas</h2>
+          </header>
+
+          <div class="forecast-days">
+            <article class="day-card selected">
+              <h3 class="day-title">Hoy</h3>
+              <p class="day-temp">17°/22°</p>
+              <p class="day-icon">🌧️</p>
+              <p class="day-desc">Lluvia</p>
+            </article>
+
+            <article class="day-card">
+              <h3 class="day-title">Mañana</h3>
+              <p class="day-temp">16°/23°</p>
+              <p class="day-icon">⛈️</p>
+              <p class="day-desc">Tormenta eléctrica</p>
+            </article>
+
+            <article class="day-card">
+              <h3 class="day-title">Dom</h3>
+              <p class="day-temp">15°/21°</p>
+              <p class="day-icon">🌧️</p>
+              <p class="day-desc">Lluvia</p>
+            </article>
+          </div>
+
+          <ul class="forecast-hours">
+            <li class="hour">
+              <p class="hour-temp">20°</p>
+              <span class="hour-icon">🌧️</span>
+              <p class="hour-chance">90%</p>
+              <time class="hour-label">11:00 a. m.</time>
+            </li>
+            <li class="hour">
+              <p class="hour-temp">21°</p>
+              <span class="hour-icon">🌧️</span>
+              <p class="hour-chance">90%</p>
+              <time class="hour-label">12:00 p. m.</time>
+            </li>
+            <li class="hour">
+              <p class="hour-temp">22°</p>
+              <span class="hour-icon">🌧️</span>
+              <p class="hour-chance">90%</p>
+              <time class="hour-label">1:00 p. m.</time>
+            </li>
+            <li class="hour">
+              <p class="hour-temp">22°</p>
+              <span class="hour-icon">🌧️</span>
+              <p class="hour-chance">90%</p>
+              <time class="hour-label">2:00 p. m.</time>
+            </li>
+            <li class="hour">
+              <p class="hour-temp">22°</p>
+              <span class="hour-icon">🌧️</span>
+              <p class="hour-chance">90%</p>
+              <time class="hour-label">3:00 p. m.</time>
+            </li>
+          </ul>
+        </section>
+
+        <section class="radar card">
+          <header class="radar-header">
+            <h2 class="radar-title">Mapa Radar</h2>
+          </header>
+          <div class="radar-maps">
+            <figure class="radar-map">
+              <img src="../img/temperatura.jpg#" alt="Mapa de Precipitación" class="radar-img">
+              <figcaption class="radar-label">Precipitación</figcaption>
+            </figure>
+            <figure class="radar-map">
+              <img src="../img/temperatura.jpg" alt="Mapa de Fuerza del viento" class="radar-img">
+              <figcaption class="radar-label">Fuerza del viento</figcaption>
+            </figure>
+            <figure class="radar-map">
+              <img src="../img/temperatura.jpg" alt="Mapa de Temperatura" class="radar-img">
+              <figcaption class="radar-label">Temperatura</figcaption>
+            </figure>
+          </div>  
+        </section>
+      </main>
+    </div>
+  </div>
 </body>
 </html>

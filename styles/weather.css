@@ -1,0 +1,267 @@
+/* =======================
+   1. RESETEO Y BASE
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #6b7c8b;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* =======================
+   2. CONTENEDORES GENERALES
+========================== */
+.weather-bg {
+  min-height: 100vh;
+  background-image: url(../img/gif.webp);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.weather-app {
+  width: 100%;
+  max-width: 360px;
+  margin-top: 24px;
+  color: #fff;
+}
+
+/* =======================
+   3. ENCABEZADO
+========================== */
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.city {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.header-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-icon,
+.settings-icon {
+  font-size: 1.2rem;
+  opacity: 0.85;
+  cursor: pointer;
+}
+.menu-icon:hover,
+.settings-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+/* =======================
+   4. CLIMA ACTUAL
+========================== */
+.current-weather {
+  margin: 30px 0 24px;
+  text-align: left;
+  padding-left: 8px;
+}
+
+.temp {
+  font-size: 4.2rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.desc {
+  font-size: 1.2rem;
+  margin-top: 4px;
+}
+
+.feels {
+  font-size: 0.97rem;
+  opacity: 0.7;
+  margin-top: 2px;
+}
+
+/* =======================
+   5. TARJETAS COMUNES
+========================== */
+.card {
+  background: rgba(60, 60, 60, 0.32);
+  border-radius: 18px;
+  padding: 16px 10px 12px;
+  margin: 0 8px 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+.card:hover {
+  background: rgba(60, 60, 60, 0.42);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+  transition: all 0.3s ease;
+}
+/* =======================
+   6. PRONÓSTICO DIARIO
+========================== */
+.forecast-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.forecast-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  opacity: 0.93;
+}
+
+.forecast-days {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.day-card {
+  background: rgba(255,255,255,0.09);
+  border-radius: 12px;
+  padding: 10px 8px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.day-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.day-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.day-temp {
+  font-size: 1.1rem;
+  margin: 3px 0;
+}
+
+.day-icon {
+  font-size: 1.4rem;
+}
+
+.day-desc {
+  font-size: 0.89rem;
+  opacity: 0.85;
+}
+
+/* =======================
+   7. PRONÓSTICO POR HORA
+========================== */
+.forecast-hours {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 6px;
+  list-style: none;
+}
+
+.hour {
+  flex: 1;
+  text-align: center;
+}
+.hour:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  transform: scale(1.03);
+  transition: all 0.2s ease;
+}
+
+.hour-temp {
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.hour-icon {
+  font-size: 1.2rem;
+}
+
+.hour-chance {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-top: 2px;
+}
+
+.hour-label {
+  font-size: 0.70rem;
+  opacity: 0.7;
+  margin-top: 2px;
+}
+
+/* =======================
+   8. RADAR
+========================== */
+.radar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.radar-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  opacity: 0.93;
+}
+
+.radar-maps {
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+}
+
+.radar-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.radar-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+  border: 2px solid rgba(255,255,255,0.13);
+}
+
+.radar-map:hover .radar-img {
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.radar-label {
+  font-size: 0.85rem;
+  text-align: center;
+  opacity: 0.8;
+}
+.radar-map:hover .radar-label {
+  opacity: 1;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+@media (max-width: 480px) {
+  .weather-app {
+    margin-top: 12px;
+    padding: 0 12px;
+  }
+}
