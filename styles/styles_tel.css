@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-black:#000000;
+    --color-white:#ffffff;
+    --color-gray:#979292;
+    --color-gray2:#444;
+    --font-family: Arial, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: var(--font-family);
+    padding-inline: 1rem;
+}
+
+header {
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-white);
+    transition: transform 0.3s ease;
+}
+header a:hover {
+    transform: scale(1.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+header img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1.2rem;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    z-index: 2;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav__a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: var(--color-gray);
+    gap: 0.5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.teclado {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.teclado__buscador {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    width: 90%;
+}
+.teclado__buscador input {
+    width: 100%;
+    height: 5rem;
+    font-size: 2.5rem;
+    text-align: end;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--color-gray);
+    color: var(--color-white);
+}
+
+.teclado__buscador i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.teclado__numeros__lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    list-style: none;
+    gap: 1.5rem;
+    width: 40%;
+}
+
+.teclado__numeros__lista li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 1rem;
+}
+.teclado__numeros__lista li:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.teclado__numeros__lista li i {
+    font-size: 2rem;
+}
+
+
+.teclado__numeros__lista__item {
+    font-size: 2.5rem;
+}
+.teclado__numeros__lista__item--tel {
+    background-color: rgb(15, 207, 15) !important;
+    grid-column: 2;
+}
+
+.teclado__numeros__lista__item--del {
+    background-color: var(--color-black)!important;
+}
+
+.teclado__numeros__lista__item--del:hover {
+    background-color: var(--color-white)!important;
+    color: var(--color-black)!important;
+}
+
+/*------------------------- recientes ----------------------------*/
+
+.recientes {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.recientes__titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.recientes__buscador {
+    width: 80%;
+    height: 2.5rem;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+    font-size: larger;
+    background-color: var(--color-gray);
+    color: var(--color-white);
+}
+
+.recientes__lista {
+    list-style: none;
+}
+
+.recientes__lista li {
+    display: flex;
+    padding: 0.5rem;
+    gap: 1rem;
+    margin-block: 0.5rem;   
+    border-radius: 0.3rem;
+}
+.recientes__lista li:hover {
+    background-color: var(--color-gray2);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.item {
+    font-size: 2.5rem;
+    color: var(--color-gray)
+}
+
+.recientes__lista__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%
+    
+}
+
+.recientes__lista__item__user{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.recientes__lista__item__user__nombre{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.recientes__lista__item__user__type{
+    color: var(--color-gray);
+    font-size: 0.9rem;
+}
+
+.recientes__lista__item__info{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.recientes__lista__item__info{
+    color: var(--color-gray);
+    font-size: 0.9rem;
+}
+
+.icon{
+    font-size: 1.5rem;
+}
+
+.recientes__hr{
+    border-color: var(--color-gray);
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*----------------------contactos-------------------------*/
+
+.contactos {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.contactos hr{
+    border-color: var(--color-gray);
+    margin-block: 1rem;
+}
+
+.contactos__div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contactos__div img{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 4rem;
+}
+
+.contactos__div img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.contactos__lista{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactos__lista__nombres{
+    width: 95%;
+}
+
+.contactos__lista__nombres span{
+    color: var(--color-gray);
+}

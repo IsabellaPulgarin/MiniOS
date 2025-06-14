@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefono</title>
+    <link rel="stylesheet" href="../styles/styles_tel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        
+        <a href="#">
+            <img src="../img/phone.png" alt="" >
+            <h1>Telefono</h1>
+        </a>
+      
+        <nav>
+            <ul>
+                <li>
+                    <a class="nav__a" href="#">
+                        <i class="fa-solid fa-star"></i>
+                        <span>favoritos</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav__a" href="#">
+                        <i class="fa-duotone fa-solid fa-clock"></i>
+                        <span>Recientes</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav__a" href="#">
+                        <i class="fa-regular fa-keyboard"></i>
+                        <span>Teclado</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav__a" href="#">
+                        <i class="fa-duotone fa-solid fa-circle-user"></i>
+                        <span>Contactos</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav__a" href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Mensajes</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    
+    </header>
+    <main>
+        <section class="teclado">
+            <div class="teclado__buscador">
+                <i class="fa-solid fa-user-plus" style="color: #020fc0;"></i>
+                <input type="tel" placeholder="Buscar contactos o números">
+            </div>
+            <div class="teclado__numeros">
+                <ul class="teclado__numeros__lista">
+                    <li>
+                        <span class="teclado__numeros__lista__item">1</span>
+                    </li>
+                    <li>
+                        <span class="teclado__numeros__lista__item">2</span>
+                        <span>ABC</span>
+                    </li>
+                    <li>
+                        <span class="teclado__numeros__lista__item">3</span>
+                        <span>DEF</span>
+                    </li>
+                    <li>
+                        <span class="teclado__numeros__lista__item">4</span>
+                        <span>GHI</span>
+                    </li>
+                    <li>
+                        <span class="teclado__numeros__lista__item">5</span>
+                        <span>JKL</span>
+                    </li>
+                    <li>
+                        <span class="teclado__numeros__lista__item">6</span>
+                        <span>MNO</span>
+                    </li>
+                    <li>
+                        <span class="teclado__numeros__lista__item">7</span>
+                        <span>PQRS</span>
+                    </li>
+                    <li>
+                        <span class="teclado__numeros__lista__item">8</span>
+                        <span>TUV</span>
+                    </li>
+                    <li>
+                        <span class="teclado__numeros__lista__item">9</span>
+                        <span>WXYZ</span>
+                    </li>
+                    <li>
+                        <span class="teclado__numeros__lista__item"><i class="fa-solid fa-asterisk"></i></span>
+                    </li>
+                    <li>
+                        <span class="teclado__numeros__lista__item">0</span>
+                        <span>+</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-hashtag"></i></span>
+                    </li>
+                    <li class="teclado__numeros__lista__item--tel">
+                        <i class="fa-solid fa-phone "></i>
+                    </li>
+                    <li class="teclado__numeros__lista__item--del">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <section class="recientes">
+        <h2 class="recientes__titulo">Recientes</h2>
+        <input class="recientes__buscador" type="text" placeholder=" 🔍 Buscar en recientes">
+        <ul class="recientes__lista">
+            <li>
+                <i class="fa-duotone fa-solid fa-circle-user item"></i>
+                <div class="recientes__lista__item">
+                    <div class="recientes__lista__item__user">
+                        <span class="recientes__lista__item__user__nombre">Isabella</span>
+                        <span class="recientes__lista__item__user__type">📞 WhatsApp</span>
+                    </div>
+                    <div class="recientes__lista__item__info">
+                        <span class="recientes__lista__item__info">1:00 p.m.</span>
+                        <i class="fa-regular fa-circle-question icon" style="color: #0047c2;"></i>
+                    </div>
+                </div>
+            </li>
+            <hr class="recientes__hr">
+            <li>
+                <i class="fa-duotone fa-solid fa-circle-user item"></i>
+                <div class="recientes__lista__item">
+                    <div class="recientes__lista__item__user">
+                        <span class="recientes__lista__item__user__nombre">Carolina</span>
+                        <span class="recientes__lista__item__user__type">Video de WhatsApp</span>
+                    </div>
+                    <div class="recientes__lista__item__info">
+                        <span class="recientes__lista__item__info">12:00 a.m.</span>
+                        <i class="fa-regular fa-circle-question icon" style="color: #0047c2;"></i>
+                    </div>
+                </div>
+            </li>
+            <hr class="recientes__hr">
+            <li>
+                <i class="fa-duotone fa-solid fa-circle-user item"></i>
+                <div class="recientes__lista__item">
+                    <div class="recientes__lista__item__user">
+                        <span class="recientes__lista__item__user__nombre">Sofia</span>
+                        <span class="recientes__lista__item__user__type">📞 WhatsApp</span>
+                    </div>
+                    <div class="recientes__lista__item__info">
+                        <span class="recientes__lista__item__info">Ayer</span>
+                        <i class="fa-regular fa-circle-question icon" style="color: #0047c2;"></i>
+                    </div>
+                </div>
+            </li>
+            <hr class="recientes__hr">
+            <li>
+                <i class="fa-duotone fa-solid fa-circle-user item"></i>
+                <div class="recientes__lista__item">
+                    <div class="recientes__lista__item__user">
+                        <span class="recientes__lista__item__user__nombre">Laura</span>
+                        <span class="recientes__lista__item__user__type">Video de WhatsApp</span>
+                    </div>
+                    <div class="recientes__lista__item__info">
+                        <span class="recientes__lista__item__info">Martes</span>
+                        <i class="fa-regular fa-circle-question icon" style="color: #0047c2;"></i>
+                    </div>
+                </div>
+            </li>
+            <hr class="recientes__hr">
+            <li>
+                <i class="fa-duotone fa-solid fa-circle-user item"></i>
+                <div class="recientes__lista__item">
+                    <div class="recientes__lista__item__user">
+                        <span class="recientes__lista__item__user__nombre">Camila</span>
+                        <span class="recientes__lista__item__user__type">Video de WhatsApp</span>
+                    </div>
+                    <div class="recientes__lista__item__info">
+                        <span class="recientes__lista__item__info">sábado</span>
+                        <i class="fa-regular fa-circle-question icon" style="color: #0047c2;"></i>
+                    </div>
+                </div>
+            </li>
+            <hr class="recientes__hr">
+            <li>
+                <i class="fa-duotone fa-solid fa-circle-user item"></i>
+                <div class="recientes__lista__item">
+                    <div class="recientes__lista__item__user">
+                        <span class="recientes__lista__item__user__nombre">Ex Amada</span>
+                        <span class="recientes__lista__item__user__type">📞 Celular</span>
+                    </div>
+                    <div class="recientes__lista__item__info">
+                        <span class="recientes__lista__item__info">Viernes</span>
+                        <i class="fa-regular fa-circle-question icon" style="color: #0047c2;"></i>
+                    </div>
+                </div>
+            </li>
+            <hr class="recientes__hr">
+            <li>
+                <i class="fa-duotone fa-solid fa-circle-user item"></i>
+                <div class="recientes__lista__item">
+                    <div class="recientes__lista__item__user">
+                        <span class="recientes__lista__item__user__nombre">Moza #7</span>
+                        <span class="recientes__lista__item__user__type">Video de WhatsApp</span>
+                    </div>
+                    <div class="recientes__lista__item__info">
+                        <span class="recientes__lista__item__info">06/06/25</span>
+                        <i class="fa-regular fa-circle-question icon" style="color: #0047c2;"></i>
+                    </div>
+                </div>
+            </li>
+            <hr class="recientes__hr">
+            <li>
+                <i class="fa-duotone fa-solid fa-circle-user item"></i>
+                <div class="recientes__lista__item">
+                    <div class="recientes__lista__item__user">
+                        <span class="recientes__lista__item__user__nombre">Moza #4</span>
+                        <span class="recientes__lista__item__user__type"> 📞 Celular</span>
+                    </div>
+                    <div class="recientes__lista__item__info">
+                        <span class="recientes__lista__item__info">04/06/25</span>
+                        <i class="fa-regular fa-circle-question icon" style="color: #0047c2;"></i>
+                    </div>
+                </div>
+            </li>
+            <hr class="recientes__hr">
+        </ul>
+    </section>
+    <!-------------------------------contactos----------------------------------->
+    <section class="contactos">
+        <h2 class="recientes__titulo">Contactos</h2>
+        <input class="recientes__buscador" type="text" placeholder=" 🔍 Buscar contactos">
+        <hr>
+        <div class="contactos__div">
+            <img src="../img/avatar.jpeg" alt="">
+            <div class="recientes__lista__item__user">
+                <span class="recientes__lista__item__user__nombre">Adrian</span>
+                <span class="recientes__lista__item__user__type">Mi tarjeta</span>
+            </div>
+        </div>
+        <div class="contactos__lista">
+            <div class="contactos__lista__nombres">
+                <span>A</span>
+                <hr>
+                <ul>
+                    <li>Adrian</li>
+                    <hr>
+                    <li>Alexis</li>
+                    <hr>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    <li>E</li>
+                    <li>f</li>
+                    <li>g</li>
+                    <li>H</li>
+                    <li>I</li>
+                    <li>J</li>
+                    <li>K</li>
+                    <li>L</li>
+                    <li>M</li>
+                    <li>N</li>
+                    <li>O</li>
+                    <li>P</li>
+                    <li>Q</li>
+                    <li>R</li>
+                    <li>S</li>
+                    <li>T</li>
+                    <li>U</li>
+                    <li>V</li>
+                    <li>X</li>
+                    <li>Y</li>
+                    <li>Z</li>
+                    <li>#</li>
+            </div>
+        </div>
+    </section>
+    </main>
+
+</body>
+
+</html>
