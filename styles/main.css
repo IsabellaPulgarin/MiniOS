@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header{
+    background-color: rgba(29, 29, 29, 0.733);
+    height: 8vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    
+    display: flex;
+    height: 8vh;
+
+}
+
+.icons{
+    display: flex;
+
+}
+.icon{
+    width: 70px;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.icon-1{
+    width: 60px;
+    height: 56px; 
+}
+
+.icon-2{
+    width: 64px;
+}
+
+.icon-3{
+    margin-top: 0.2em;
+    width: 60px;
+}
+
+.icon-4{
+    width: 60px;
+}
